@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+/.vscode/*
+!/.vscode/tasks.json
+/.nyc_output
+/coverage
+/debug/debug.env
+*.log
+*.out
+*.exe
+*-test
