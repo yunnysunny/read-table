@@ -1,12 +1,12 @@
 # @whyun/read-table
 
 [![build status][action-image]][action-url]
-[![GitHub license](https://img.shields.io/github/license/yunnysunny/@whyun/read-table)](https://github.com/yunnysunny/@whyun/read-table)
+[![GitHub license](https://img.shields.io/github/license/yunnysunny/read-table)](https://github.com/yunnysunny/read-table)
 [![node version][node-image]][node-url]
 
 [npm-url]: https://npmjs.org/package/@yunnysunny/@whyun/read-table
-[action-image]: https://github.com/yunnysunny/@whyun/read-table/workflows/CI/badge.svg
-[action-url]: https://github.com/yunnysunny/@whyun/read-table/actions/workflows/ci.yml
+[action-image]: https://github.com/yunnysunny/read-table/workflows/CI/badge.svg
+[action-url]: https://github.com/yunnysunny/read-table/actions/workflows/ci.yml
 
 [node-image]: https://img.shields.io/badge/node.js-%3E=_12-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
