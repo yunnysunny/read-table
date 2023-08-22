@@ -1,5 +1,5 @@
 {
-  "name": "read-table",
+  "name": "@whyun/read-table",
   "version": "0.0.1",
   "description": "Parsing output in table like to object",
   "main": "index.js",

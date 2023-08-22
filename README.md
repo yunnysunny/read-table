@@ -1,28 +1,28 @@
-# read-table
+# @whyun/read-table
 
 [![build status][action-image]][action-url]
-[![GitHub license](https://img.shields.io/github/license/yunnysunny/read-table)](https://github.com/yunnysunny/read-table)
+[![GitHub license](https://img.shields.io/github/license/yunnysunny/@whyun/read-table)](https://github.com/yunnysunny/@whyun/read-table)
 [![node version][node-image]][node-url]
 
-[npm-url]: https://npmjs.org/package/@yunnysunny/read-table
-[action-image]: https://github.com/yunnysunny/read-table/workflows/CI/badge.svg
-[action-url]: https://github.com/yunnysunny/read-table/actions/workflows/ci.yml
+[npm-url]: https://npmjs.org/package/@yunnysunny/@whyun/read-table
+[action-image]: https://github.com/yunnysunny/@whyun/read-table/workflows/CI/badge.svg
+[action-url]: https://github.com/yunnysunny/@whyun/read-table/actions/workflows/ci.yml
 
 [node-image]: https://img.shields.io/badge/node.js-%3E=_12-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 
-[![NPM](https://nodei.co/npm/read-table.png?downloads=true)](https://nodei.co/npm/read-table/) 
+[![NPM](https://nodei.co/npm/@whyun/read-table.png?downloads=true)](https://nodei.co/npm/@whyun/read-table/) 
 
 A tool for parsing command-line tabular output data.
 
 ## Install
 
-npm install read-table --save
+npm install @whyun/read-table --save
 
 ## Usage
 ### Basic use
 ```javascript
-const { parse } = require('read-table');
+const { parse } = require('@whyun/read-table');
 const table = `
 key1 key2 key3
 aaa bbb ccc
@@ -35,7 +35,7 @@ Will print `{"lines":[["aaa","bbb","ccc"],["111","222","333"]],"firstLine":["key
 ### With quotation fields
 If field value has space, you can use quotation to wrapper it.
 ```javascript
-const { parse } = require('read-table');
+const { parse } = require('@whyun/read-table');
 const table2 = `
 key1 key2 key3
 aaa bbb "ccc xxx"
