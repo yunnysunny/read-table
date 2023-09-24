@@ -1,0 +1,25 @@
+﻿Process	CPU	Private Bytes	Working Set	PID	Description	Company Name	Command Line	GPU
+System Idle Process	46.89	60 K	8 K	0				
+vmmem	9.15	552,064 K	550,928 K	21020				
+procexp64.exe	8.53	58,172 K	86,124 K	20500	Sysinternals Process Explorer	Sysinternals - www.sysinternals.com	"D:\greensoft\SysinternalsSuite\procexp64.exe" 	
+msrdc.exe	6.10	184,484 K	66,544 K	68880	远程桌面	Microsoft Corporation	msrdc.exe /v:99BDFB01-31EE-4AC4-85A2-AECBBAAF1726 /hvsocketserviceid:F1D7F981-FACB-11E6-BD58-64006A7986D3 /silent /wslg /plugin:WSLDVC_PACKAGE /wslgsharedmemorypath:WSL\99BDFB01-31EE-4AC4-85A2-AECBBAAF1726\wslg "C:\Program Files\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForLinux_1.2.5.0_x64__8wekyb3d8bbwe\wslg.rdp"	
+System	5.52	192 K	96 K	4				
+MsMpEng.exe	5.33	507,644 K	386,252 K	5408	Antimalware Service Executable	Microsoft Corporation	"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.23080.2006-0\MsMpEng.exe"	
+explorer.exe	4.36	817,980 K	253,904 K	8564	Windows 资源管理器	Microsoft Corporation	C:\WINDOWS\Explorer.EXE	
+vmwp.exe	2.46	9,648 K	20,052 K	21440				
+Interrupts	2.14	 K	 K	n/a	Hardware Interrupts and DPCs			
+dwm.exe	1.56	232,100 K	164,804 K	1360				
+dllhost.exe	1.29	5,680 K	11,076 K	13728	COM Surrogate	Microsoft Corporation	C:\WINDOWS\SYSTEM32\DLLHOST.EXE /PROCESSID:{DFB65C4C-B34F-435D-AFE9-A86218684AA8}	
+Taskmgr.exe	1.00	180,012 K	163,244 K	41584				
+ctfmon.exe	0.60	51,196 K	48,072 K	9696				
+conhost.exe	0.45	6,940 K	13,100 K	30468	控制台窗口主机	Microsoft Corporation	\??\C:\WINDOWS\system32\conhost.exe 0x4	
+audiodg.exe	0.43	5,416 K	9,472 K	72308				
+conhost.exe	0.38	6,884 K	13,148 K	74100	控制台窗口主机	Microsoft Corporation	\??\C:\WINDOWS\system32\conhost.exe 0x4	
+svchost.exe	0.36	13,776 K	18,872 K	3088	Windows 服务主进程	Microsoft Corporation	C:\WINDOWS\system32\svchost.exe -k appmodel -p	
+wslhost.exe	0.36	1,888 K	9,172 K	36952	Windows Subsystem for Linux	Microsoft Corporation	"C:\Program Files\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForLinux_1.2.5.0_x64__8wekyb3d8bbwe\wslhost.exe" --vm-id {99bdfb01-31ee-4ac4-85a2-aecbbaaf1726} --handle 2188	
+wslhost.exe	0.35	2,496 K	11,324 K	49084	Windows Subsystem for Linux	Microsoft Corporation	"C:\Program Files\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForLinux_1.2.5.0_x64__8wekyb3d8bbwe\wslhost.exe" --vm-id {99bdfb01-31ee-4ac4-85a2-aecbbaaf1726} --handle 1628	
+csrss.exe	0.32	4,624 K	5,360 K	860				
+svchost.exe	0.29	56,804 K	55,896 K	4800	Windows 服务主进程	Microsoft Corporation	C:\WINDOWS\System32\svchost.exe -k LocalServiceNoNetwork -p	
+svchost.exe	0.26	25,516 K	30,692 K	964	Windows 服务主进程	Microsoft Corporation	C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p	
+svchost.exe	0.24	5,540 K	9,464 K	3812	Windows 服务主进程	Microsoft Corporation	C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p	
+svchost.exe	0.22	22,212 K	19,560 K	1184	Windows 服务主进程	Microsoft Corporation	C:\WINDOWS\system32\svchost.exe -k RPCSS -p	

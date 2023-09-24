@@ -2,6 +2,10 @@ module.exports = {
     plugins: [
     // 'eslint-plugin-tsdoc',
     ],
+    'parserOptions': {
+        'ecmaVersion': 2018,
+        'requireConfigFile': false
+    },
     extends: [
         'eslint:recommended',
     ],

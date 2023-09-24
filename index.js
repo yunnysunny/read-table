@@ -3,14 +3,19 @@ const SPACE_CHARS = [
     '\t',
 ];
 const QUOTATION_CHAR = '"';
-function isSpace(char) {
-    return SPACE_CHARS.indexOf(char) !== -1 ? char : null;
+function isSpace(char, splitChars) {
+    return splitChars.indexOf(char) !== -1 ? char : null;
 }
 /**
  * Parsing table like output to object array
  * @param {string} output 
+ * @param {ParseOptions} options
  */
-exports.parse = function(output) {
+exports.parse = function(output, options) {
+    options = {
+        splitChars: SPACE_CHARS,
+        ...(options || {})
+    };
     const len = output.length;
     let firstLine = [];
     let currentLine = [];
@@ -62,7 +67,7 @@ exports.parse = function(output) {
                 firstLine = currentLine.splice(0);
             }
             break;
-        case isSpace(char): // get a space
+        case isSpace(char, options.splitChars): // get a space
             if ((quotationStart && !quotationEnd)) {
                 currentField += char;
             }
@@ -84,7 +89,7 @@ exports.parse = function(output) {
             lastChar = char;
             break;
         default:
-            if (isSpace(lastChar)) {
+            if (isSpace(lastChar, options.splitChars)) {
                 if ((quotationStart)) {
                     // skip
                 } else if (quotationEnd) {
@@ -106,4 +111,25 @@ exports.parse = function(output) {
         lines,
         firstLine
     };
+};
+/**
+ * Parsing table like output to object array
+ * @param {string} output 
+ */
+exports.parse2Object = function(output, options) {
+    const parsed = exports.parse(output, options);
+    const { firstLine, lines } = parsed;
+    const keyLen = firstLine.length;
+    if (lines.length === 0) {
+        return { firstLine, records: [] };
+    }
+    const records = lines.map(function doLoop(line) {
+        const record = new Map();
+        for (let i = 0; i < keyLen; i++) {
+            const key = firstLine[i];
+            record.set(key, line[i]);
+        }
+        return record;
+    });
+    return { firstLine, records };
 };

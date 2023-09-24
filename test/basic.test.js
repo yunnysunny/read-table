@@ -1,5 +1,8 @@
 const { parse } = require('..');
 const { expect } = require('chai');
+const fs = require('fs');
+const path = require('path');
+const { parse2Object } = require('..');
 describe('basic test', function () {
     it('plain field', function () {
         const table = `
@@ -34,6 +37,11 @@ aaa bbb "ccc xxx"
             ],
             'firstLine': ['key1', 'key2', 'key3']
         });
+    });
+    it('process test', function() {
+        const content = fs.readFileSync(path.join(__dirname, 'resources/process.txt'));
+        const rv = parse2Object(content.toString(), {splitChars: ['\t']});
+        expect(rv.records.length).to.gt(0);
     });
 });
 

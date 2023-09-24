@@ -46,7 +46,7 @@ aaa bbb "ccc xxx"
 const rv2 = parse(table2);
 console.log(JSON.stringify(rv2));
 ```
-Will print `{"lines":[["aaa","bbb","ccc xxx"],["111","222 yyy","333"],["222 zzz","777","888"],["333 888","444 000","444"]],"firstLine":["key1 000","444"]],"firstLine":["key1","key2","key3"]}`
+Will print `{"lines":[["aaa","bbb","ccc xxx"],["111","222 yyy","333"],["222 zzz","777","888"],["333 888","444 000","444"]],"firstLine":["key1","key2","key3"]}`
 
 ## License
 
