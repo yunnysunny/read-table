@@ -55,7 +55,8 @@ If all columns have fixed length, you can call function `parseFixed`.
 ```javascript
 
 const { parseFixed } = require('');
-const { lines } = parseFixed(`head1        head2     head3      
+const { lines } = parseFixed(
+`head1        head2     head3      
 value10      value11   value12    
 value20      value21   value22`);
 console.log(lines);
