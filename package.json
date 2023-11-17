@@ -1,6 +1,6 @@
 {
   "name": "@whyun/read-table",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Parsing output in table like to object",
   "main": "index.js",
   "scripts": {
